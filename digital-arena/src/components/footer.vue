@@ -4,7 +4,7 @@
       <footer class="footer p-10 bg-neutral text-neutral-content">
         <div>
           <span class="footer-title">Services</span>
-          <a class="link link-hover">IT</a>
+          <a class="link link-hover">Information Technologies (IT)</a>
           <a class="link link-hover">ICT Infrastructure</a>
           <a class="link link-hover">Energetics</a>
           <a class="link link-hover">ISO, GDPR, CISO standards</a>

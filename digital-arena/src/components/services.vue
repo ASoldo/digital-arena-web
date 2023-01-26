@@ -16,8 +16,8 @@
         </figure>
         <div class="card-body">
           <h2 class="card-title">
-            IT
-            <div class="badge badge-secondary">NEW</div>
+            Information Technologies (IT)
+            <!-- <div class="badge badge-secondary">NEW</div> -->
           </h2>
           <p>
             We improve technology and processes. By using our services you will
@@ -37,7 +37,7 @@
         <div class="card-body">
           <h2 class="card-title">
             ICT infrastructure
-            <div class="badge badge-secondary">NEW</div>
+            <!-- <div class="badge badge-secondary">NEW</div> -->
           </h2>
           <p>
             Construction and maintenance of ICT infrastructure. We build and
@@ -57,7 +57,7 @@
         <div class="card-body">
           <h2 class="card-title">
             Energetics
-            <div class="badge badge-secondary">NEW</div>
+            <!-- <div class="badge badge-secondary">NEW</div> -->
           </h2>
           <p>
             Green transforming the energy sector through efficient energy use
@@ -76,7 +76,7 @@
         <div class="card-body">
           <h2 class="card-title">
             ISO standards, GDPR compliance and CISO externalization
-            <div class="badge badge-secondary">NEW</div>
+            <!-- <div class="badge badge-secondary">NEW</div> -->
           </h2>
           <p>
             We provide information system audit service and harmonize your
