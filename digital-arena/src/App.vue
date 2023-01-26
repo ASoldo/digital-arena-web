@@ -14,8 +14,8 @@ AOS.init();
   <Nav />
   <div class="h-screen">
     <RouterView />
+    <Footer />
   </div>
-  <Footer />
 </template>
 
 <style scoped>

@@ -2,24 +2,30 @@
   <div class="relative">
     <div class="fixed w-full z-10">
       <div class="p-1 m-2">
-        <div class="navbar bg-base-100 rounded-xl">
+        <div class="navbar rounded-xl glass">
           <div class="navbar-start">
             <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost btn-circle">
+              <label tabindex="0" class="btn btn-ghost btn-circle text-green-400">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
                 </svg>
               </label>
-              <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                <li><router-link to="/">Homepage</router-link></li>
-                <li><router-link to="/about">Jobs</router-link></li>
+              <ul tabindex="0"
+                class="glass bg-gray-900 menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
+                <li>
+                  <router-link to="/" @click="handleSelected">Homepage</router-link>
+                </li>
+                <li>
+                  <router-link to="/about" @click="handleSelected">Jobs</router-link>
+                </li>
                 <!-- <li><a>About</a></li> -->
               </ul>
             </div>
           </div>
           <div class="navbar-center">
-            <a class="btn btn-ghost normal-case text-xl">Digital Arena</a>
+            <!-- <a class="btn btn-ghost normal-case text-xl">Digital Arena</a> -->
+            <img @click="scrollToTop()" style="height: 30px" src="../assets/digitalarena.png" alt="digital-arena" />
           </div>
           <div class="navbar-end">
             <button class="btn btn-ghost btn-circle">
@@ -45,3 +51,16 @@
     </div>
   </div>
 </template>
+<script lang="ts" setup>
+import { ref } from "vue";
+const enableDropdownHover = ref(true);
+const handleSelected = () => {
+  if (document.activeElement instanceof HTMLElement) {
+    document.activeElement.blur();
+  }
+  enableDropdownHover.value = false;
+};
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+</script>
