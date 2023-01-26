@@ -1,19 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Interactive from "./../components/interactive.vue";
+</script>
 
 <template>
   <main>
-    <!-- <h1>Hello from home view</h1> -->
-    <!-- <button data-aos="fade-out" class="">Button</button> -->
-    <div class="hero min-h-screen bg-base-200">
+    <div class="hero h-screen w-full bg-base-200">
+      <Interactive data-aos="fade-out" data-aos-delay="500" class="h-screen w-full" />
       <div class="hero-content text-center">
-        <div class="max-w-md">
-          <h1 class="text-5xl font-bold">Hello there</h1>
-          <p class="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-          <button class="btn btn-primary">Get Started</button>
+        <div class="max-w-md mt-52">
+          <!-- <h1 class="text-5xl font-bold">Digital Arena</h1> -->
+          <p class="py-6">Understanding the Client</p>
+          <div data-aos="fade-up">
+            <button class="btn btn-primary">Explore</button>
+          </div>
         </div>
       </div>
     </div>

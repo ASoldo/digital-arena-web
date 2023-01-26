@@ -11,22 +11,11 @@ AOS.init();
 </script>
 
 <template>
-  <div class="relative">
-    <div class="fixed w-full z-10">
-      <Nav />
-    </div>
-  </div>
-  <!-- <div data-aos="fade-up"> -->
-  <!--   <button class="btn">Hello daisyui</button> -->
-  <!-- </div> -->
+  <Nav />
   <div class="h-screen">
     <RouterView />
   </div>
-  <div class="flex flex-col">
-    <div class="mt-auto w-full">
-      <Footer />
-    </div>
-  </div>
+  <Footer />
 </template>
 
 <style scoped>
