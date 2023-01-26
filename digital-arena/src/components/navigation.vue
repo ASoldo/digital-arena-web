@@ -14,10 +14,10 @@
               <ul tabindex="0"
                 class="glass bg-gray-900 menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
                 <li>
-                  <router-link to="/" @click="handleSelected">Homepage</router-link>
+                  <router-link to="/" @click="handleSelected">Home</router-link>
                 </li>
                 <li>
-                  <router-link to="/about" @click="handleSelected">Jobs</router-link>
+                  <router-link to="/open-jobs" @click="handleSelected">Open Jobs</router-link>
                 </li>
                 <!-- <li><a>About</a></li> -->
               </ul>
@@ -25,7 +25,8 @@
           </div>
           <div class="navbar-center">
             <!-- <a class="btn btn-ghost normal-case text-xl">Digital Arena</a> -->
-            <img @click="scrollToTop()" style="height: 30px" src="../assets/digitalarena.png" alt="digital-arena" />
+            <img class="link" @click="scrollToTop()" style="height: 30px" src="../assets/digitalarena.png"
+              alt="digital-arena" />
           </div>
           <div class="navbar-end">
             <button class="btn btn-ghost btn-circle">
