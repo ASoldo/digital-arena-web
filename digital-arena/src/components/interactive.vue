@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import * as dat from "dat.gui";
-import { ref, computed } from "vue";
+import { ref } from "vue";
 const isSm = ref(false);
 var init = function () {
   var isMobile =
     navigator.userAgent &&
     navigator.userAgent.toLowerCase().indexOf("mobile") >= 0;
-  var isSmall = window.innerWidth < 1000;
+  var isSmall = window.innerWidth <= 820;
 
   var ps = new ParticleSlider({
     ptlGap: isMobile || isSmall ? 3 : 0,
@@ -66,7 +66,7 @@ var initParticleSlider = (function () {
     ? window.addEventListener("load", initParticleSlider, false)
     : (window.onload = initParticleSlider)
 );
-isSm.value = window.innerWidth <= 390 ? true : false;
+isSm.value = window.innerWidth <= 820 ? true : false;
 </script>
 <template>
   <div id="particle-slider">

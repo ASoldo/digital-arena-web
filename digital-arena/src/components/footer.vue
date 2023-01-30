@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row">
     <div class="mt-auto w-full">
-      <footer class="footer p-10 bg-neutral text-neutral-content">
+      <footer class="footer p-10 bg-neutral text-neutral-content glass">
         <div>
           <span class="footer-title">Services</span>
           <a class="link link-hover">Information Technologies (IT)</a>
@@ -20,7 +20,7 @@
           <span class="footer-title">Legal</span>
           <a class="link link-hover">OIB: 69476362249</a>
           <a class="link link-hover">MBS: 060320206</a>
-          <a class="link link-hover">Email: info@digitalarena.hr</a>
+          <a class="link link-hover" href="mailto:info@digitalarena.hr">Email: info@digitalarena.hr</a>
           <a class="link link-hover">Mob: +385 99 505 8114</a>
         </div>
       </footer>

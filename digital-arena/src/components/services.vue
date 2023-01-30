@@ -2,8 +2,8 @@
 <template>
   <!-- <div class="flex flex-col"> -->
   <!--   <div class="mt-auto w-full"> -->
-  <h1 id="services" class="text-center footer-title mt-5 hover:text-white">
-    <span class="shadow-xl hover:text-white hover:shadow-blue-500/40">
+  <h1 id="services" class="text-center footer-title mt-5">
+    <span class="shadow-xl hover:text-white hover:shadow-blue-500/40 text-2xl">
       Services
     </span>
   </h1>

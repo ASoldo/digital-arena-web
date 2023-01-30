@@ -11,4 +11,11 @@ module.exports = {
     prefix: "",
     darkTheme: "dark",
   },
+  theme: {
+    extend: {
+      colors: {
+        "logo-color": "#7dc244",
+      },
+    },
+  },
 };
