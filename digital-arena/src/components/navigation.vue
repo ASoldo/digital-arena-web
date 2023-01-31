@@ -2,7 +2,7 @@
   <div class="relative">
     <div class="fixed w-full z-50">
       <div class="p-1 m-2">
-        <div class="navbar rounded-xl backdrop-blur-2xl">
+        <div class="navbar rounded-xl backdrop-blur-2xl" data-aos="fade-down" data-aos-delay="125">
           <div class="navbar-start">
             <div class="dropdown" @click="handleMenuState()">
               <label tabindex="0" class="btn btn-ghost btn-circle text-logo-color">
@@ -39,7 +39,7 @@
           </div>
           <div class="navbar-center">
             <!-- <a class="btn btn-ghost normal-case text-xl">Digital Arena</a> -->
-            <img class="link" @click="scrollToTop()" style="height: 30px" src="../assets/digitalarena.png"
+            <img class="link" @click="scrollToTop()" height="30px" style="height: 30px" src="../assets/digitalarena.png"
               alt="digital-arena" />
           </div>
           <div class="navbar-end">
