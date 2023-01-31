@@ -13,8 +13,10 @@
           <span class="footer-title">Company</span>
           <a class="link link-hover">DIGITAL ARENA d.o.o.</a>
           <a class="link link-hover">Šetalište Stjepana Radića 16, 21260 Imotski</a>
-          <a class="link link-hover">Zagreb, XII Podbrežje 11a</a>
+          <a class="link link-hover">Zagreb, XI Podbrežje 11a</a>
           <a class="link link-hover">Split, Put Pazdigrada 14</a>
+          <a class="link link-hover">DIGITAL ARENA d.o.o. Ljubuški</a>
+          <a class="link link-hover">Ljubuški, Šipovača 84</a>
         </div>
         <div>
           <span class="footer-title">Legal</span>
