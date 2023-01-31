@@ -14,7 +14,9 @@
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "dat.gui": "^0.7.9",
+    "particles.vue3": "^2.8.0",
     "pinia": "^2.0.28",
+    "tsparticles": "^2.8.0",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row">
     <div class="mt-auto w-full">
-      <footer class="footer p-10 bg-neutral text-neutral-content glass">
+      <footer class="footer p-10 text-neutral-content backdrop-blur-sm">
         <div>
           <span class="footer-title">Services</span>
           <a class="link link-hover">Information Technologies (IT)</a>

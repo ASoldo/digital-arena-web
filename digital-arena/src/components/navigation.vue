@@ -1,8 +1,8 @@
 <template>
   <div class="relative">
-    <div class="fixed w-full z-10">
+    <div class="fixed w-full z-50">
       <div class="p-1 m-2">
-        <div class="navbar rounded-xl glass">
+        <div class="navbar rounded-xl backdrop-blur-2xl">
           <div class="navbar-start">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost btn-circle text-logo-color">
@@ -11,8 +11,9 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
                 </svg>
               </label>
-              <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 rounded-box w-52 glass">
-                <li :class="{ bordered: isActive('/') }">
+              <ul tabindex="0"
+                class="menu menu-compact dropdown-content mt-3 p-2 rounded-box w-52 backdrop-blur-2xl bg-transparent glass">
+                <li :class="{ bordered: isActive('home') }">
                   <router-link class="hover:text-white hover:bg-violet-900 text-white bg-logo-color" to="/"
                     @click="handleSelected">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -21,7 +22,7 @@
                         d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>Home</router-link>
                 </li>
-                <li :class="{ bordered: isActive('/open-jobs') }">
+                <li :class="{ bordered: isActive('open jobs') }">
                   <router-link class="hover:text-white hover:bg-violet-900 text-white bg-logo-color mt-1"
                     to="/open-jobs" @click="handleSelected">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -82,11 +83,10 @@ const scrollToTop = () => {
 const router = useRoute();
 // Now you can access params like:
 const isActive = (route: any) => {
-  if (route == router.fullPath) {
+  if (route == router.name) {
     return computed(() => {
       return true;
     });
   }
 };
-console.log(router.name);
 </script>
