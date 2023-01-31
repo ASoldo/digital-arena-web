@@ -4,7 +4,7 @@
       <div class="p-1 m-2">
         <div class="navbar rounded-xl backdrop-blur-2xl">
           <div class="navbar-start">
-            <div class="dropdown">
+            <div class="dropdown" @click="handleMenuState()">
               <label tabindex="0" class="btn btn-ghost btn-circle text-logo-color">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -70,11 +70,20 @@
 import { ref, computed } from "vue";
 import { useRoute } from "vue-router";
 const enableDropdownHover = ref(true);
+const isMenuActive = ref(false);
 const handleSelected = () => {
   if (document.activeElement instanceof HTMLElement) {
     document.activeElement.blur();
   }
   enableDropdownHover.value = false;
+};
+const handleMenuState = () => {
+  if (document.activeElement instanceof HTMLElement && isMenuActive.value) {
+    document.activeElement.blur();
+    isMenuActive.value = false;
+  } else {
+    isMenuActive.value = true;
+  }
 };
 const scrollToTop = () => {
   window.scrollTo(0, 0);

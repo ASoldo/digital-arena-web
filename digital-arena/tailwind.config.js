@@ -16,6 +16,8 @@ module.exports = {
       colors: {
         "logo-color": "#7dc244",
         "light-logo-color": "#a4ff59",
+        "extra-light-logo-color": "#c2fa93",
+        "ultra-light-logo-color": "#e2ffc9",
       },
     },
   },
